@@ -18,13 +18,7 @@ const questions = [
     message: "Please provide concise details of your project"
   },
 
-  {
-    type: "input",
-    name: "badge",
-    message: "What badge links will you use?"
-  },
-
-  {
+    {
     type: "list",
     name: "license",
     message: "Which license will your project use?",
@@ -33,13 +27,18 @@ const questions = [
 
   {
     type: "input",
-    name: "installation of app",
+    name: "install",
     message: "What are the installation instructions?"
   },
-
+  
   {
     type: "input",
-    name: "contributing",
+    name: "usage",
+    message: "Please provide the languages that will be used within this project?"
+  },
+  {
+    type: "input",
+    name: "contributor",
     message: "Please provide all contributors of the project"
   },
 
