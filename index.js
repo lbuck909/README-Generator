@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const markdown = require("../generateMarkdown");
+const markdown = require("./utils/generateMarkdown");
 
 
 const questions = [
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.createPromptModule(questions).then((responses) => {
     console.log ("Create README.md file...");
-    writeToFile("./potential-enigma/README.md", generatorMarkdown({ ...responses}));
+    writeToFile("./dist/README.md", generatorMarkdown({ ...responses}));
   });
 }
 
