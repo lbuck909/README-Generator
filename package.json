@@ -8,7 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  }
+  "url": 
+
+  },
+  "gitHubPage": "https://github.com/lbuck909/README-Generator",
+ "dependencies": {
+  "inquirer": "^8.2.4"
+ }
 }
