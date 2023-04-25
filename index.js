@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const markdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 const questions = [
@@ -57,14 +57,15 @@ const questions = [
 
 
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(). fileName). data);
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 
 function init() {
-  inquirer.createPromptModule(questions).then((responses) => {
+  inquirer.prompt(questions).then((responses) => {
+    console.log(responses);
     console.log ("Create README.md file...");
-    writeToFile("./dist/README.md", generatorMarkdown({ ...responses}));
+    writeToFile("./dist/README.md", generateMarkdown({ ...responses}));
   });
 }
 
