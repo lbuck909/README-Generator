@@ -1,5 +1,5 @@
-# s
-  by undefined
+# this is a test
+  by lbuck
  
   ![Repo license](https://img.shields.io/badge/license-${license}-blue.svg)
 
@@ -17,20 +17,20 @@
 
 ## License
     
-    License under the Apache license.
+    License under the MIT license.
  
 
 ## Description
-  s
+  test answer
 ## Installation
-  s
+  testing
 
 ## Usage
-  s
+  test
 
 ## Contributor
-  s
+  n/a
   
 ## Contact Information
-  [s](https://github.com/s)
-  f@gmail.com
+  [lbuck](https://github.com/lbuck)
+  l@gmail.com
